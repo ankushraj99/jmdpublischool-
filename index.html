@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMD Public School - Shaping Future Leaders</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d3b66;
+            --secondary-color: #f4d35e;
+            --accent-color: #ee964b;
+            --dark-color: #0d1b2a;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--dark-color);
+            color: #fff;
+            font-size: 0.9rem;
+            padding: 8px 0;
+        }
+
+        /* Navbar */
+        .navbar-brand img { height: 50px; }
+        .bg-school-primary { background-color: var(--primary-color); }
+        .nav-link { font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        /* Hero Banner */
+        .hero-section {
+            background: linear-gradient(rgba(13, 59, 102, 0.7), rgba(13, 59, 102, 0.7)), 
+                        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1350&q=80') center/cover;
+            height: 80vh;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Feature Cards */
+        .feature-card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .feature-card:hover { transform: translateY(-10px); }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fas fa-phone me-2"></i> +91 98765 43210
+                <i class="fas fa-envelope ms-3 me-2"></i> info@jmdpublicschool.com
+            </div>
+            <div>
+                <a href="contact.html" class="btn btn-sm btn-warning fw-bold">Admissions Open 2026-27</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-school-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>JMD PUBLIC SCHOOL
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html#academics">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Admission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Empowering Minds, Shaping Futures</h1>
+            <p class="lead mb-4">Welcome to JMD Public School — Providing Quality Education with Excellence & Values.</p>
+            <a href="contact.html" class="btn btn-warning btn-lg me-2 fw-bold">Apply Now</a>
+            <a href="about.html" class="btn btn-outline-light btn-lg">Explore More</a>
+        </div>
+    </section>
+
+    <!-- Key Highlights -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">Why Choose JMD Public School?</h2>
+                <div class="mx-auto" style="width: 80px; height: 3px; background-color: var(--accent-color);"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card p-4 text-center">
+                        <div class="feature-icon mb-3"><i class="fas fa-user-graduate"></i></div>
+                        <h4>Expert Faculty</h4>
+                        <p class="text-muted">Experienced and dedicated teachers focused on every student's personal growth.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4 text-center">
+                        <div class="feature-icon mb-3"><i class="fas fa-laptop-code"></i></div>
+                        <h4>Modern Labs</h4>
+                        <p class="text-muted">High-tech computer labs, science centers, and smart digital classrooms.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-4 text-center">
+                        <div class="feature-icon mb-3"><i class="fas fa-running"></i></div>
+                        <h4>Sports & Extra-Curricular</h4>
+                        <p class="text-muted">Comprehensive sports facilities and activities for overall personality development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notice Board & Events Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Notice Board -->
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 border rounded shadow-sm bg-white">
+                        <h3 class="fw-bold text-primary mb-3"><i class="fas fa-bullhorn me-2"></i>Latest Announcements</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Admissions open for Nursery to Class 10th (Session 2026-27).
+                                <span class="badge bg-primary rounded-pill">New</span>
+                            </li>
+                            <li class="list-group-item">Annual Sports Meet scheduled for next month.</li>
+                            <li class="list-group-item">Parent-Teacher Meeting (PTM) on upcoming Saturday.</li>
+                            <li class="list-group-item">Science & Art Exhibition entries open now.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Principal Message -->
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 border rounded shadow-sm bg-white">
+                        <h3 class="fw-bold text-primary mb-3"><i class="fas fa-user-tie me-2"></i>Principal's Message</h3>
+                        <p class="fst-italic">"At JMD Public School, we aim to nurture knowledge, character, and discipline in every student to prepare them for global challenges."</p>
+                        <h6 class="fw-bold mb-0">- Principal, JMD Public School</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-3">JMD Public School</h4>
+                    <p>Dedicated to excellence in education, moral values, and all-round development of students.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Admissions</a></li>
+                        <li><a href="contact.html#contact" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Get in Touch</h5>
+                    <p class="text-white-50 mb-1"><i class="fas fa-map-marker-alt me-2"></i> Main Road, School Campus, City, India</p>
+                    <p class="text-white-50 mb-1"><i class="fas fa-phone me-2"></i> +91 98765 43210</p>
+                    <p class="text-white-50"><i class="fas fa-envelope me-2"></i> contact@jmdpublicschool.com</p>
+                </div>
+            </div>
+            <hr class="mt-4 bg-secondary">
+            <div class="text-center text-white-50">
+                <small>© 2026 JMD Public School. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+  </html>
